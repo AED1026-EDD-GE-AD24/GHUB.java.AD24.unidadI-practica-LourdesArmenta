@@ -76,6 +76,26 @@ public class Conjunto {
         }
     }
 
+    //union de dos conjuntos
+    public Conjunto union(Conjunto c2){
+        Conjunto u = new Conjunto();
+        //primero copia el operando de la union
+        for(int k=0; k<cardinal;k++){
+            u.cto[k]=this.cto[k];
+
+        }
+        u.cardinal = cardinal;
+        //añadir los elementos de c2 no incluidos
+        for(int k=0; k<c2.cardinal;k++){
+            u.añadir(c2.cto[k]);
+        }
+        return u;
+    }
+
+    public int getCardinal(){
+        return cardinal;
+    }
+
 
 
 
