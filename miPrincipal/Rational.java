@@ -9,7 +9,11 @@ public class Rational {
         r[1]= 1;
     }
     
-    public Rational(int a, int b) {
+    public Rational(int a, int b) throws PosicionIlegalException{
+        if(b<=0)
+        {
+            throw new PosicionIlegalException();
+        }
         this.r[0] = a;
         this.r[1] = b;
     }

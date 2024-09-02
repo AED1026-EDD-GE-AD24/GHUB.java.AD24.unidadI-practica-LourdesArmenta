@@ -1,7 +1,7 @@
 package miPrincipal;
 import java.util.Scanner;
 public class AppRational{
-    public static void menu(){
+    public static void menu() throws Exception{
         Scanner consola = new Scanner(System.in);
         System.out.println("\n======================================");
         System.out.println("Operaciones con Racionales ");
