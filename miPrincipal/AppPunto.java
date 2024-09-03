@@ -6,7 +6,7 @@ public class AppPunto {
         System.out.println("         Operaciones con Punto        ");
         System.out.println("======================================");
         Punto p1 = new Punto(2,1);
-        Punto p2 = new Punto(3,2);
+        Punto p2 = new Punto(2,4);
         Punto p3 = new Punto(4,1);
 
         System.out.println("Eje x del punto 1= "+p1.getX());
